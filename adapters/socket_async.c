@@ -98,8 +98,9 @@ SOCKET_ASYNC_HANDLE socket_async_create(uint32_t serverIPv4, uint16_t port,
             int originalFlags = fcntl(sock, F_GETFL, 0);
 			int bind_ret;
 
-            (void)fcntl(sock, F_SETFL, originalFlags | O_NONBLOCK);
-
+            //(void)fcntl(sock, F_SETFL, originalFlags | O_NONBLOCK);
+            (void)fcntl(sock, F_SETFL, originalFlags);
+            
             memset(&sock_addr, 0, sizeof(sock_addr));
             sock_addr.sin_family = AF_INET;
             sock_addr.sin_addr.s_addr = 0;

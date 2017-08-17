@@ -12,8 +12,8 @@
 #include "azure_c_shared_utility/optimize_size.h"
 #include "azure_c_shared_utility/xlogging.h"
 
-#include "freertos/FreeRTOS.h"
-#include "freertos/task.h"
+#include "FreeRTOS.h"
+#include "task.h"
 
 typedef struct TICK_COUNTER_INSTANCE_TAG
 {

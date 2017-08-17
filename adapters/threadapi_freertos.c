@@ -6,8 +6,8 @@
 /*Codes_SRS_THREADAPI_FREERTOS_30_001: [ The threadapi_freertos shall implement the method ThreadAPI_Sleep defined in threadapi.h ]*/
 #include "azure_c_shared_utility/threadapi.h"
 
-#include "freertos/FreeRTOS.h"
-#include "freertos/task.h"
+#include "FreeRTOS.h"
+#include "task.h"
 
 /*Codes_SRS_THREADAPI_FREERTOS_30_002: [ The ThreadAPI_Sleep shall receive a time in milliseconds. ]*/
 /*Codes_SRS_THREADAPI_FREERTOS_30_003: [ The ThreadAPI_Sleep shall stop the thread for the specified time. ]*/
